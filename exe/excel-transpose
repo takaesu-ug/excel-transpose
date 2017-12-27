@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
 require "excel/transpose"
+
+file =  ARGV.first
+
+Excel::Transpose.run(input_file: file)

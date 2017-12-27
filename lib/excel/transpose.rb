@@ -1,7 +1,17 @@
-require "excel/transpose/version"
+require 'rubyXL'
+
+require 'awesome_print' # TODO: あとで消す
+require 'pry-byebug'    # TODO: あとで消す
+
+require 'excel/transpose/version'
+require 'excel/transpose/reader'
+require 'excel/transpose/writer'
 
 module Excel
   module Transpose
-    # Your code goes here...
+    def self.run(input_file:)
+      input = Excel::Transpose::Reader.new(input_file)
+      Excel::Transpose::Writer.new(input.headers, input.rows).write('output_transpose.xlsx')
+    end
   end
 end
