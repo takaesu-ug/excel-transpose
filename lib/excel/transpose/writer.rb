@@ -16,8 +16,6 @@ module Excel
           worksheet.change_column_width(0, 15)
           worksheet.change_column_width(1, 100)
 
-
-
           sheet_data.each_with_index do |(label, value), index|
             worksheet.change_column_vertical_alignment(index, 'top')
 
