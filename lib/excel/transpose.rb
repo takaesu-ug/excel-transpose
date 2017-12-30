@@ -1,8 +1,5 @@
 require 'rubyXL'
 
-require 'awesome_print' # TODO: あとで消す
-require 'pry-byebug'    # TODO: あとで消す
-
 require 'excel/transpose/version'
 require 'excel/transpose/reader'
 require 'excel/transpose/writer'
