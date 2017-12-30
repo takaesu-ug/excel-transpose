@@ -4,4 +4,7 @@ require "excel/transpose"
 
 file =  ARGV.first
 
+abort 'Should put filename to argv' unless file
+
+
 Excel::Transpose.run(input_file: file)
