@@ -9,7 +9,7 @@ module Excel
 
       def write(output)
         @rows.map do |row|
-          sheet_name = row.first # 1つ目のデータをシート名にする
+          sheet_name = row.first.to_s # 1つ目のデータをシート名にする
           sheet_data = [@headers, row].transpose
 
           worksheet = @workbook.add_worksheet(sheet_name)
