@@ -16,8 +16,14 @@ $ make docker_build
 ### 2. docker run
 
 ```
-$ make docker_run EXCEL=/path/to/excel/file
+$ make docker_run EXCEL=[XLSX_FILENAME]
+
+ex)
+$ make docker_run EXCEL=text.xlsx
 ```
+
+- `XLSX_FILENAME`
+    - You can set xlsx filename only. Therefore you should put xlsx file in current directory.
 
 ### others
 
